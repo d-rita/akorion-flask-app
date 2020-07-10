@@ -5,8 +5,8 @@ from flask_mail import Mail, Message
 app = Flask(__name__)
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 465
-app.config["MAIL_USERNAME"] = "nessareed12@gmail.com"
-app.config["MAIL_PASSWORD"] = "dr18152229"
+app.config["MAIL_USERNAME"] = "ritananyanzi@gmail.com"
+app.config["MAIL_PASSWORD"] = "qwertyRandom"
 app.config["MAIL_USE_TLS"] = False
 app.config["MAIL_USE_SSL"] = True
 
@@ -32,7 +32,7 @@ def submit_order():
     email = Message(
        subject="Customer Order",
         body=f"Customer: {name} has placed an order for {order_name}. This is their contact: {tel}",
-        sender="nessareed12@gmail.com",
+        sender="ritananyanzi@gmail.com",
         recipients=["martinkatamba@akorion.com"]
     )
     mail.send(email)
