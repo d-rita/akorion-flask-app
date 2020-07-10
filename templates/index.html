@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Orders Forms</title>
+    </head>
+    <body>
+        <h3>Make an Order</h3>
+        <form action="{{ url_for('submit_order') }}" method="post">
+            <input type="text" name="username" placeholder="Enter your name here" required>
+            
+            <input type="text" name="phone" placeholder="07xx-xxx-xxx" required>
+            
+            <input type="text" name="order" placeholder="Enter order name here" required>
+            
+            <button>Submit Order</button>
+        </form>
+    </body>
+</html>
