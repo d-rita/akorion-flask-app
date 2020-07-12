@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} Order Status {% endblock %}
+
+{% block heading %} 
+        Submitted
+ {% endblock %}
+
+{% block body %}
+        <p>An order for {{ order_name }} has been placed by {{ name }}, telephone number: {{ tel }}</p><br>
+        <a href="{{ url_for('index') }}">Place an order</a>
+{% endblock %}

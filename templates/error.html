@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} Error {% endblock %}
+
+{% block heading %} 
+    Uh oh!
+ {% endblock %}
+
+{% block body %}
+    <p>There was a problem placing your order. Please try again.</p><br>   
+    <a href="{{ url_for('index') }}">Place an order</a>
+{% endblock %}
